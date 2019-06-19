@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet">
+
+    <script src="./calculation.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div class="calculator-wrap">
+      <div class="resul-screen">
+        <input type="text" name="displayResult" id="displayResult" autocomplete="off">
+      </div>
+
+      <div class="keypad" style="text-align: right">
+        <button type="button" value="" onclick="backspace()"> &#8592 </button>
+      </div>
+
+      <div class="keypad">
+
+        <button type="button" value="1" onclick="keyPressed('1')"> 1 </button>
+        <button type="button" value="2" onclick="keyPressed('2')"> 2 </button>
+        <button type="button" value="3" onclick="keyPressed('3')"> 3 </button>
+        <button type="button" value="4" onclick="keyPressed('+')"> + </button>
+
+        <button type="button" value="4" onclick="keyPressed('4')"> 4 </button>
+        <button type="button" value="5" onclick="keyPressed('5')"> 5 </button>
+        <button type="button" value="6" onclick="keyPressed('6')"> 6 </button>
+        <button type="button" value="-" onclick="keyPressed('-')"> - </button>
+
+        <button type="button" value="7" onclick="keyPressed('7')"> 7 </button>
+        <button type="button" value="8" onclick="keyPressed('8')"> 8 </button>
+        <button type="button" value="9" onclick="keyPressed('9')"> 9 </button>
+        <button type="button" value="*" onclick="keyPressed('*')"> x </button>
+
+        <button type="button" value="ce" onclick="clearResult()"> C </button>
+        <button type="button" value="0" onclick="keyPressed('0')"> 0 </button>
+        <button type="button" value="=" onclick="solve()"> = </button>
+        <button type="button" value="/" onclick="keyPressed('/')"> / </button>
+
+        <button type="button" value="(" onclick="keyPressed('(')"> ( </button>
+        <button type="button" value=")" onclick="keyPressed(')')"> ) </button>
+        <button type="button" value="." onclick="keyPressed('.')"> . </button>
+        <button type="button" value="**" onclick="keyPressed('**')"> ^ </button>
+
+      </div>
+    </div>
+  </body>
+</html>
